@@ -29,7 +29,7 @@ typedef struct mount_parser_struct {
     // filesys_check_order = 1, 2, ... -> the order in which the filesystems need to be checked on boot by ``fsck`` command.
     unsigned short filesys_check_order;
 
-    mount_parser_struct* next_mount;
+    struct mount_parser_struct* next_mount;
 } mount_parser_struct;
 
 typedef struct mount_parser_iterator_struct {

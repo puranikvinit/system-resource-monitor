@@ -45,7 +45,7 @@ typedef struct diskstats_parser_struct {
     // Total time spent by disk in flushes (ms)
     unsigned long total_flush_time;
 
-    diskstats_parser_struct* next_device;
+    struct diskstats_parser_struct* next_device;
 } diskstats_parser_struct;
 
 typedef struct diskstats_parser_iterator_struct {

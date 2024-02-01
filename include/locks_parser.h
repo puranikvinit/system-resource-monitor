@@ -41,7 +41,7 @@ typedef struct lock_parser_struct {
     char* lock_region_start;
     char* lock_region_end;
 
-    lock_parser_struct* next_lock;
+    struct lock_parser_struct* next_lock;
 } lock_parser_struct;
 
 typedef struct lock_parser_iterator {
